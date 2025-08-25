@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  tools {
+    nodejs 'Node20' // Thêm dòng này, đảm bảo khớp với tên trong Global Tool Configuration
+  }
+
   options {
     timestamps()
     ansiColor('xterm')
