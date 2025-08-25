@@ -1,10 +1,6 @@
 pipeline {
   agent any
 
-  tools {
-        nodejs 'Node20' // Tên NodeJS đã cấu hình trong Jenkins
-  }
-
   options {
     timestamps()
     ansiColor('xterm')
