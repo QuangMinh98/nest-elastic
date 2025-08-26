@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Install Docker Compose') {
-            steps {
-                sh 'apk add --no-cache docker-compose' // Cài Docker Compose trong container
-            }
-        }
         stage('Check Environment') {
             steps {
                 sh 'docker-compose --version'
